@@ -1,0 +1,5 @@
+.window-box{
+    @media screen and (min-width:; 500p){
+        background:  #CB80FF;
+    }
+}

@@ -1,0 +1,11 @@
+.writting-board-structure{
+    background-color: aliceblue;
+    height: 720px;
+    width: 100%;
+    border-color: #575454;
+    background-color: #575454;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+textarea:active{
+    border: 1px solid #575454;
+}
