@@ -13,7 +13,7 @@ const ExpenseForm = (props) => {
     //setUserInput({
     //  ...userInput,
     //enteredTitle: event.target.value
-    // });      
+    // });
 
     setEnteredTitle(event.target.value);
     // setUserInput((prevState)=>{//use this type of function when you input depends upon previous inputs
@@ -36,14 +36,14 @@ const ExpenseForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     const expenseData = {
-      titile: enteredTitle,
+      title: enteredTitle,
       amount: enteredAmount,
-      date: new Date(enteredDate)
+      date: new Date(enteredDate),
     };
     props.onSaveExpenseData(expenseData);
-    setEnteredTitle('')
-     setEnteredAmount('')
-      setEnteredDate('');
+    setEnteredTitle("");
+    setEnteredAmount("");
+    setEnteredDate("");
   };
   return (
     <form onSubmit={submitHandler}>
@@ -58,7 +58,7 @@ const ExpenseForm = (props) => {
         </div>
         <div class="new-expe                                                                                                             nse__control">
           <label>Amount</label>
-          
+
           <input
             type="number"
             min="0.01"
