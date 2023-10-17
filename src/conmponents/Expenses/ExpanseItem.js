@@ -1,4 +1,3 @@
-//import React, { useState } from "react";
 import ExpanseDate from "./ExpanseDate.js";
 import "./ExpanseItem.css";
 import Card from "../UI/Card.js";
