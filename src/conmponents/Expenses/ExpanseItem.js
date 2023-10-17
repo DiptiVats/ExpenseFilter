@@ -1,8 +1,8 @@
 //import React, { useState } from "react";
 import ExpanseDate from "./ExpanseDate.js";
-import "./ExpanceItem.css";
+import "./ExpanseItem.css";
 import Card from "../UI/Card.js";
-function ExpanceItem(props) {
+function ExpanseItem(props) {
   return (
     <Card className="expense-item">
       <ExpanseDate date={props.date}></ExpanseDate>
@@ -13,4 +13,4 @@ function ExpanceItem(props) {
     </Card>
   );
 }
-export default ExpanceItem;
+export default ExpanseItem;

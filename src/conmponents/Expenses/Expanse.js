@@ -1,18 +1,27 @@
-import React, {useState} from 'react';
-import ExpanceItem from "./ExpanceItem.js";
+import React, { useState } from "react";
+import ExpanseItem from "./ExpanseItem.js";
 //import Card from "./UI/Card.js";
-import './Expanese.css';
+import "./Expanese.css";
 import ExpensesFilter from "./ExpensesFilter.js";
-const Expenses = props => {
-  const [filteredYear,setFilteredYear]=useState('2020')
-  const filterChangeHandler = selectedYear=>{
+const Expenses = (props) => {
+  const [filteredYear, setFilteredYear] = useState("2020");
+  const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
-  return(
+  return (
     <div className="expenses">
-      <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler}/>
-      {props.items.map(expense => <ExpanceItem title={expense.title}  amount={expense.amount} date={expense.date}/>)}
+      <ExpensesFilter
+        selected={filteredYear}
+        onChangeFilter={filterChangeHandler}
+      />
+      {props.items.map((expense) => (
+        <ExpanseItem
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
+        />
+      ))}
     </div>
   );
-}
+};
 export default Expenses;
